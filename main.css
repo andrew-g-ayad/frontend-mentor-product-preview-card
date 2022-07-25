@@ -4,6 +4,7 @@
 body {
   /* Primary */
   --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(157, 58%, 12%);
   --cream: hsl(30, 38%, 92%);
   /* Natural */
   --very-dark-blue: hsl(212, 21%, 14%);
@@ -25,6 +26,8 @@ body {
 }
 .attribution {
   margin-bottom: 0;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 /* Mobile */
 .card {
@@ -83,7 +86,9 @@ body {
   transform: translateY(-0.5rem);
 }
 .card .col2 .add {
-  display: block;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
   text-decoration: none;
   color: var(--white);
   background-color: var(--dark-cyan);
@@ -127,5 +132,8 @@ body {
   }
   .card .col2 .title {
     line-height: 2rem;
+  }
+  .card .col2 .add:hover {
+    background-color: var(--very-dark-cyan);
   }
 }
